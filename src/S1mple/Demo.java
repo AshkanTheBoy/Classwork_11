@@ -21,6 +21,7 @@ public class Demo {
 
         Apple apple = new Apple(0.2, Variety.GALA);
         System.out.println(apple);
+        System.out.println(Variety.GALA.getTaste());
 
         System.out.println(apple.getWeight());
 
