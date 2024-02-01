@@ -1,4 +1,4 @@
-package Classwork_16;
+package Classwork_17.recursion;
 /*
 Быки и коровы
 0123456789
