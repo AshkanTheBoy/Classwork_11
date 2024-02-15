@@ -12,6 +12,7 @@ public class PhoneBookTask {
     public static void main(String[] args) {
         ArrayList<Person> book = new ArrayList<>();
         book.add(new Person("John","Zhonn","+3(23)333-45-56"));
+        book.add(new Person("Zohn","Jhonn","+3(24)333-45-56"));
         book.add(new Person("Andrew","Gork","+4(66)377-98-57"));
         book.add(new Person("John","Borr","+8(77)222-23-88"));
         Comparator<Person> compSurname = Comparator.comparing(person -> person.getSurname());
@@ -21,7 +22,9 @@ public class PhoneBookTask {
         System.out.println("After sorting: ");
         Collections.sort(book, compSurname);
         for (Person person: book){
-            System.out.println(person.getSurname()+" "+person.getPhoneNumber());
+            if (person.getPhoneNumber().startsWith("3",1)){
+                System.out.println(person.getSurname()+" "+person.getPhoneNumber());
+            }
         }
 
 
