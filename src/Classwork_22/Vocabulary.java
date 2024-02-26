@@ -1,13 +1,12 @@
-package Classwork_21;
-
-import com.google.common.collect.ArrayListMultimap;
-import com.google.common.collect.Multimap;
+package Classwork_22;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.*;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.ListIterator;
 
 public class Vocabulary {
     public static void main(String[] args) {

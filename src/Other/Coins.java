@@ -1,14 +1,18 @@
+package Other;
+
 import java.util.Arrays;
 
 public class Coins {
     //{1, 1, 1, 1, 1, 2, 2, 2, 3, 3, 5};
     static int[] wallet = {1, 1, 1, 1, 1, 2, 2, 2, 3, 3, 5};
-    static int sum = 6;
+    static int sum = 16;
     static int count = 0;
 
     public static void main(String[] args) {
         boolean enoughCoins = checkWallet();
         if (enoughCoins) {
+            //reverseWallet();
+            //printArr(wallet);
             countCombinations(0);
             System.out.println(count);
             int[] combLengths = new int[count];
@@ -121,6 +125,18 @@ public class Coins {
         for (int[] ints : arr) {
             System.out.println(Arrays.toString(ints));
         }
+    }
+
+    public static void reverseWallet(){
+        for (int i = 0,j=wallet.length-1; i<wallet.length/2; i++,j--) {
+            swap(i,j);
+        }
+    }
+
+    static void swap(int i, int j) {
+        int temp = wallet[i];
+        wallet[i] = wallet[j];
+        wallet[j] = temp;
     }
 
 
