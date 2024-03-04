@@ -3,7 +3,7 @@ package Classwork_25.exceptions;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class BuildInExceptions {
+public class BuiltInExceptions {
     public static void main(String[] args) {
         processNumberFormatException();
     }
