@@ -1,6 +1,6 @@
 package Classwork_26;
 
-public class ThreePiglings {
+public class Builder_ThreePiglings {
     public static void main(String[] args) {
         Builder nifNif = new NifNif();
         Builder nafNaf = new NafNaf();
